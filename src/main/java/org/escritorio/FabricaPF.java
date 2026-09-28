@@ -1,14 +1,18 @@
 package org.escritorio;
 
-public class FabricaPF implements FabricaAbstrata{
+public class FabricaPF implements FabricaAbstrata {
 
     @Override
     public Contrato createContrato() {
-        return new ContratoPF();
+        Contrato contrato = new Contrato();
+        contrato.setPessoa(new PessoaFisica());
+        return contrato;
     }
 
     @Override
     public Procuracao createProcuracao() {
-        return new ProcuracaoPF();
+        Procuracao procuracao = new Procuracao();
+        procuracao.setPessoa(new PessoaFisica());
+        return procuracao;
     }
 }

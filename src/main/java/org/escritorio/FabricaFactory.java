@@ -1,10 +1,10 @@
 package org.escritorio;
 
-public class FactoryMethod {
+public class FabricaFactory {
 
-    private FactoryMethod() {};
-    private static FactoryMethod instance = new FactoryMethod();
-    public static FactoryMethod getInstance() {
+    private FabricaFactory() {};
+    private static FabricaFactory instance = new FabricaFactory();
+    public static FabricaFactory getInstance() {
         return instance;
     }
 

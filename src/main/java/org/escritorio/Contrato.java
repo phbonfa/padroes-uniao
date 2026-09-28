@@ -1,6 +1,9 @@
 package org.escritorio;
 
-public interface Contrato {
+public class Contrato extends Documento {
 
-    String emitir();
+    @Override
+    public String emitir() {
+        return "Contrato " + this.pessoa.getTipo();
+    }
 }
